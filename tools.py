@@ -295,9 +295,12 @@ def send_message_with_attachments(
             raise ValueError("Missing TELEGRAM_BOT_TOKEN or TELEGRAM_CHAT_ID environment variables")
 
         greeting = get_greeting()
+        
+        current_month = datetime.now().strftime('%B')  # Gets full month name, e.g., "July"
+
         message_text = (
             f"Hi,\n{greeting}.\n\n"
-            "I've attached the timesheet and invoice for the month of July.\n"
+            f"I've attached the timesheet and invoice for the month of {current_month}.\n"
             "Please review and approve at your convenience."
         )
 
