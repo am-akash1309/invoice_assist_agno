@@ -243,11 +243,14 @@ gr.ChatInterface(
     description="Ask me to log attendance, generate invoices, or send them via email!",
     theme="soft",
     examples=[
+        "Hi, how can you help me?",
+        "I work in R&D Department",
         "What do you know about me?",
         "Mark today as present and that I have worked on AI",
-        "Show my attendance for this week",
+        "Summarize what I did this week",
+        "How many week off and holidays do I have this month?"
         "Generate invoice for July",
-        "Send the email for July",
+        "Send the email for this month",
     ],
     chatbot=gr.Chatbot(height=450),
     type="messages"  # ✅ Use message-type format
